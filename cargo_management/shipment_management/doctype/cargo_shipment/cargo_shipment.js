@@ -1,6 +1,6 @@
 frappe.ui.form.on('Cargo Shipment', {
 	setup(frm) {
-		frm.page.sidebar.toggle(false); // Hide Sidebar
+		frm.page.sidebar.toggle(false);
 
 		cargo_management.form_view.set_child_transportation_indicator_formatter(frm, 'warehouse_receipt');
 		cargo_management.form_view.set_child_transportation_indicator_formatter(frm, 'parcel');

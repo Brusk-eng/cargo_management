@@ -29,8 +29,7 @@ frappe.ui.form.ParcelQuickEntryForm = class ParcelQuickEntryForm extends frappe.
 
 		this.mandatory.splice(14, 0, {fieldtype: 'Section Break', fieldname: 'content_section', hide_border: true}, {
 			fieldtype: 'Table', fieldname: 'content', options: 'Parcel Content', in_place_edit: false, fields: [
-		 		{label: __('Description'), fieldtype: 'Text Editor', fieldname: 'description', in_list_view: true, max_height: '4rem', columns: 6},
-		 		{label: __('Tracking Number'), fieldtype: 'Data', fieldname: 'tracking_number', in_list_view: true, columns: 2},
+		 		{label: __('Description'), fieldtype: 'Text Editor', fieldname: 'description', in_list_view: true, max_height: '4rem', columns: 8},
 		 		{label: __('Item Code'), fieldtype: 'Link', fieldname: 'item_code', options: 'Item', in_list_view: true, columns: 2}
 		 	]}
 		); // TODO: Item code with filters. Maybe we can filter if its is by the service Type?

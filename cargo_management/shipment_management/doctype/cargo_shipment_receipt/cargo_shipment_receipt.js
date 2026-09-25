@@ -2,7 +2,7 @@ frappe.ui.form.on('Cargo Shipment Receipt', {
 	// TODO: On Save set customer on the parcel that are not set!
 
 	setup(frm) {
-		frm.page.sidebar.toggle(false); // Hide Sidebar
+		frm.page.sidebar.toggle(false);
 
 		cargo_management.form_view.set_child_transportation_indicator_formatter(frm, 'warehouse_receipt');
 		cargo_management.form_view.set_child_transportation_indicator_formatter(frm, 'parcel');
