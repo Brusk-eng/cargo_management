@@ -17,6 +17,7 @@ class CargoShipmentWarehouse(Document):
 		parentfield: DF.Data
 		parenttype: DF.Data
 		reference: DF.Data | None
+		total_parcels: DF.Int
 		total_pieces: DF.Int
 		transportation: DF.Literal["", "Sea", "Air"]
 		type: DF.Data
